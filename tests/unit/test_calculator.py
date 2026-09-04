@@ -34,5 +34,24 @@ class TestMultiplyDivideWithValidation:
             divide("10", 2)
 
 # TODO: Students will add TestMultiplyDivide class
-class TestMultiplyDivide(self):
-    pass 
+class TestMultiplyDivide:
+    """Test multiplication and division operations."""
+    
+    def test_multiply_positive_numbers(self):
+        """Test multiplying positive numbers."""
+        assert multiply(2, 3) == 6
+        assert multiply(10, 15) == 150
+
+    def test_divide_positive_numbers(self):
+        """Test dividing positive numbers."""
+        assert divide(10, 2) == 5
+        assert divide(20, 4) == 5
+
+class TestPower:
+    """Test power operation."""
+    
+    def test_power_positive_numbers(self):
+        """Test raising positive numbers to a power."""
+        assert power(2, 3) == 8
+        assert power(10, 2) == 100
+        
